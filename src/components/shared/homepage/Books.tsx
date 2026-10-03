@@ -8,10 +8,6 @@
 //     const booksData=await getBooks();
 //     console.log(booksData,"booksData");
 
-import Image from "next/image";
-import BookCard from "../BookCard";
-import { IBook } from "@/types/books.types";
-
 //     return (
 //         <section className='container mx-auto my-[70px]'>
 //           Books
@@ -24,6 +20,10 @@ import { IBook } from "@/types/books.types";
 // };
 
 // export default Books;
+
+import Image from "next/image";
+import BookCard from "../BookCard";
+import { IBook } from "@/types/books.types";
 const getBooks = async () => {
   const res = await fetch("http://localhost:3000/booksData.json");
   const data = await res.json();
@@ -49,7 +49,7 @@ const Books = async () => {
       {/* Books Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
 
-        {booksData.map((book:IBook,ind:number) => {
+        {booksData.slice(0, 9).map((book:IBook,ind:number) => {
              return <BookCard  key={ind} book={book} /> 
             }
          
