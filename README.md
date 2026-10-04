@@ -14,7 +14,7 @@ A modern and interactive **Next.js** book application for exploring books, viewi
 
 ## 📸 Project Preview
 
-![Book Vibe Project Preview](ADD_YOUR_PROJECT_IMAGE_LINK_HERE)
+<img width="815" height="438" alt="Image" src="https://github.com/user-attachments/assets/ce5fab6f-e66c-4c26-8f07-cee7cf8bea15" />
 
 ---
 
